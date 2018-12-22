@@ -1,0 +1,32 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3589525, 2018-05-30T15:32:43-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: AHAMONO-Regular by Hanken Design Co.
+ * URL: https://www.myfonts.com/fonts/hanken-designco/ahamono/regular/
+ * Copyright: Copyright (c) 2014 Ahamono is designed by Alfredo Marco Pradil (ammpradil@gmail.com). Ahamono is a trademark of Alfredo Marco Pradil.
+ * Licensed pageviews: 20,000
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3589525
+ *
+ * © 2018 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/36c595");
+
+@font-face {
+    font-family: 'AHAMONO-Regular';
+    src: url('../assets/webfonts/36C595_0_0.eot');
+    src: url('../assets/webfonts/36C595_0_0.eot?#iefix') format('embedded-opentype'), url('../assets/webfonts/36C595_0_0.woff2') format('woff2'), url('../assets/webfonts/36C595_0_0.woff') format('woff'), url('../assets/webfonts/36C595_0_0.ttf') format('truetype');
+}
+
+.ahamono {
+    font-family: AHAMONO-Regular, sans-serif;
+}
