@@ -22,3 +22,9 @@ code {
 .to-uppercase {
     text-transform: uppercase;
 }
+
+.page-center {
+    right: 2%;
+    bottom: -85%;
+    position: fixed;
+}
