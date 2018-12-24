@@ -1,0 +1,5 @@
+.intro {
+    height: 100% !important;
+    background: url(../assets/graphics/kinbw.png) no-repeat center;
+    background-size: cover;
+}

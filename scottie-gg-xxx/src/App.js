@@ -4,7 +4,7 @@ import Homepage from "./components/Homepage";
 
 const App = () => (
     <Router>
-        <div>
+        <div className="fullscreen">
             <Route exact path="/" component={Homepage} />
         </div>
     </Router>
