@@ -22,7 +22,7 @@ class MenuNavbar extends Component {
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav>
-                        <NavItem className="ahamono to-uppercase" href="/">
+                        <NavItem className="ahamono to-uppercase" href={process.env.PUBLIC_URL + 'documents/resume.pdf'}>
                             <FontAwesomeIcon icon={faFilePdf} /> Resume
                         </NavItem>
                         <NavItem className="ahamono to-uppercase" href="/">
