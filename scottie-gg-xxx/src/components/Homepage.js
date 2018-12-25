@@ -6,12 +6,12 @@ import '../style/homepage.css';
 class Homepage extends Component {
     render() {
         return (
-            <div className="fullscreen">
+            <div className="one-hundred-percent-height intro">
                 <MenuNavbar/>
-                <div className="intro fullscreen">
-                    <div className="fullscreen page-center">
-                        <img src={sLogo} alt="logo"/>
-                    </div>
+                <div className="page-center">
+                    <img src={sLogo} alt="logo"/>
+                    <br /><br />
+                    <h5 className="to-uppercase ahamono">Developer | Leader | Teacher</h5>
                 </div>
             </div>
         );

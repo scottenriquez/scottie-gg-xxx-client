@@ -14,7 +14,7 @@ code {
     monospace;
 }
 
-.fullscreen {
+.one-hundred-percent-height {
     height: 100%;
     margin: 0;
 }
@@ -24,7 +24,7 @@ code {
 }
 
 .page-center {
-    right: 2%;
-    bottom: -85%;
-    position: fixed;
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
 }

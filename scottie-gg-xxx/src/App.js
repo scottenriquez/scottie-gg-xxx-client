@@ -4,7 +4,7 @@ import Homepage from "./components/Homepage";
 
 const App = () => (
     <Router>
-        <div className="fullscreen">
+        <div className="one-hundred-percent-height">
             <Route exact path="/" component={Homepage} />
         </div>
     </Router>
