@@ -11,7 +11,7 @@ class Homepage extends Component {
                 <div className="page-center">
                     <img src={sLogo} alt="logo"/>
                     <br /><br />
-                    <h5 className="to-uppercase ahamono">Developer | Leader | Teacher</h5>
+                    <h4 className="to-uppercase ahamono">Developer | Leader | Teacher</h4>
                 </div>
             </div>
         );
