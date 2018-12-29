@@ -5,7 +5,7 @@ body, html {
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    color: black;
+    color: white;
     background-color: #0d0d0d;
 }
 
@@ -55,6 +55,11 @@ body a:focus {
 
 .content-center {
     text-align: center;
+}
+
+.content-padding {
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 .table-background {
