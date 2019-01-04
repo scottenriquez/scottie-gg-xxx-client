@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Repo from './Repo';
+import Repo from '../components/Repo';
 
 it('renders Repo without crashing', () => {
     const div = document.createElement('div');

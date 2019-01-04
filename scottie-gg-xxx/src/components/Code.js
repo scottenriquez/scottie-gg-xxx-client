@@ -20,7 +20,7 @@ class Code extends Component {
     }
 
     getRepos = async () => {
-        const response = await fetch('https://www.scottie.gg/api/github/repos/');
+        const response = await fetch('https://api.scottie.gg/v1/repos/');
         const body = await response.json();
         if (response.status !== 200) {
             throw Error(body.message);

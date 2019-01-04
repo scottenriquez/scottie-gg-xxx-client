@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MenuNavbar from './MenuNavbar';
+import MenuNavbar from '../components/MenuNavbar';
 
 it('renders MenuNavbar without crashing', () => {
     const div = document.createElement('div');
