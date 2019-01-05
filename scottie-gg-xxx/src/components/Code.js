@@ -12,9 +12,9 @@ class Code extends Component {
 
     componentDidMount() {
         this.getRepos()
-            .then((response) => {
-                this.setState({repos: response});
-                this.setState({loading: true});
+            .then((body) => {
+                this.setState({repos: JSON.parse(body)});
+                this.setState({loading: false});
             })
             .catch((error) => console.log(error));
     }
