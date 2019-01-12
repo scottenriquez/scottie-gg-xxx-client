@@ -28,7 +28,7 @@ class MenuNavbar extends Component {
                         <NavItem className="ahamono to-uppercase" href="/code">
                             <FontAwesomeIcon icon={faCodeBranch} /> Code
                         </NavItem>
-                        <NavItem className="ahamono to-uppercase" href="/">
+                        <NavItem className="ahamono to-uppercase" href="/writing">
                             <FontAwesomeIcon icon={faKeyboard} /> Writing
                         </NavItem>
                         <NavItem className="ahamono to-uppercase" href="/">

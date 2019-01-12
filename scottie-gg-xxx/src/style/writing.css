@@ -1,0 +1,13 @@
+.writing-intro {
+    padding-top: 17%;
+    padding-bottom: 17%;
+    display: table;
+    width: 100%;
+    height: inherit;
+    color: #fff;
+    background: #000 url(../assets/graphics/water.png) no-repeat scroll bottom center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
