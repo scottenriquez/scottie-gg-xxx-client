@@ -13,7 +13,7 @@ class Code extends Component {
     componentDidMount() {
         this.getRepos()
             .then((body) => {
-                this.setState({repos: JSON.parse(body)});
+                this.setState({repos: body});
                 this.setState({loading: false});
             })
             .catch((error) => console.log(error));

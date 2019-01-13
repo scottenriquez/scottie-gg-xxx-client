@@ -13,7 +13,7 @@ class Writing extends Component {
     componentDidMount() {
         this.getRepos()
             .then((body) => {
-                this.setState({blogPosts: JSON.parse(body)});
+                this.setState({blogPosts: body});
                 this.setState({loading: false});
             })
             .catch((error) => console.log(error));
@@ -31,7 +31,6 @@ class Writing extends Component {
     renderBlogPreviews = () => {
         let blogPreviewsJSX = [];
         this.state.blogPosts.forEach((blogPost) => {
-            console.log(blogPost);
             blogPreviewsJSX.push(<BlogPreview key={blogPost.PostID} blogPost={blogPost}/>);
         });
         return blogPreviewsJSX;
