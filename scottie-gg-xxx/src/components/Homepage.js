@@ -4,6 +4,10 @@ import sLogo from '../assets/graphics/scott-s.svg';
 import '../style/homepage.css';
 
 class Homepage extends Component {
+    componentDidMount() {
+        document.title = 'Scott Enriquez | Homepage';
+    }
+
     render() {
         return (
             <div className="one-hundred-percent-height intro">

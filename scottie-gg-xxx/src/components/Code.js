@@ -11,6 +11,7 @@ class Code extends Component {
     };
 
     componentDidMount() {
+        document.title = 'Scott Enriquez | Code';
         this.getRepos()
             .then((body) => {
                 this.setState({repos: body});

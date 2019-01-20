@@ -11,6 +11,7 @@ class Writing extends Component {
     };
 
     componentDidMount() {
+        document.title = 'Scott Enriquez | 一期一会';
         this.getRepos()
             .then((body) => {
                 this.setState({blogPosts: body});
