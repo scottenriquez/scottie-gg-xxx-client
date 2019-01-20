@@ -31,7 +31,7 @@ class Writing extends Component {
     renderBlogPreviews = () => {
         let blogPreviewsJSX = [];
         this.state.blogPosts.forEach((blogPost) => {
-            blogPreviewsJSX.push(<BlogPreview key={blogPost.PostID} blogPost={blogPost}/>);
+            blogPreviewsJSX.push(<BlogPreview key={blogPost.postID} blogPost={blogPost}/>);
         });
         return blogPreviewsJSX;
     };

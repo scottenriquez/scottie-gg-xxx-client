@@ -11,7 +11,7 @@ const App = () => (
             <Route exact path="/" component={Homepage} />
             <Route exact path="/code" component={Code} />
             <Route exact path="/writing" component={Writing} />
-            <Route exact path="/post" component={BlogPost} />
+            <Route exact path="/writing/:blogPostURL" component={BlogPost} />
         </div>
     </Router>
 );
