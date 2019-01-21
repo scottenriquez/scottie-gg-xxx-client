@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import MenuNavbar from './MenuNavbar';
 import Spinner from './Spinner';
+import Footer from './Footer';
 import BlogPreview from './BlogPreview';
 import bLogo from '../assets/graphics/blog-b.svg';
 import '../style/writing.css';
+
 
 class Writing extends Component {
     state = {
@@ -52,6 +54,7 @@ class Writing extends Component {
                         !this.state.loading ? this.renderBlogPreviews() : <Spinner/>
                     }
                 </div>
+                <Footer/>
             </div>
         );
     }

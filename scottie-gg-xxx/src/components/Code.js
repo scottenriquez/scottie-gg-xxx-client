@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import MenuNavbar from './MenuNavbar';
+import Footer from './Footer';
 import Repo from './Repo';
 import Spinner from './Spinner';
 import cLogo from '../assets/graphics/code-c.svg';
@@ -54,6 +55,7 @@ class Code extends Component {
                         !this.state.loading ? this.renderRepos() : <Spinner/>
                     }
                 </div>
+                <Footer/>
             </div>
         );
     }

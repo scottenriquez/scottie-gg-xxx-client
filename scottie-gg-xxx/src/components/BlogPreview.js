@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import BlogTags from "./BlogTags";
+import BlogTags from './BlogTags';
 
 class BlogPreview extends Component {
     render() {

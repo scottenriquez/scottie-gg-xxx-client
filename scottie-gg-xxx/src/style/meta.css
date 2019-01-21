@@ -1,11 +1,11 @@
-.code-intro {
-    padding-top: 17%;
-    padding-bottom: 17%;
+.intro {
     display: table;
     width: 100%;
     height: inherit;
+    padding: 100px 0;
+    text-align: center;
     color: #fff;
-    background: #000 url(../assets/graphics/interview.png) no-repeat scroll bottom center;
+    background: #000 url(../assets/graphics/computer.png) no-repeat scroll bottom center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

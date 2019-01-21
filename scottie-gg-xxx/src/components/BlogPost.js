@@ -8,6 +8,7 @@ import CSharp from 'prismjs/components/prism-csharp.min';
 //eslint-disable-next-line
 import Python from 'prismjs/components/prism-python.min';
 import MenuNavbar from './MenuNavbar';
+import Footer from './Footer';
 import Spinner from './Spinner';
 import BlogTags from './BlogTags';
 import '../style/prism.css';
@@ -52,7 +53,7 @@ class BlogPost extends Component {
                 <h4>{this.state.blogPost.blogPostDate} | <BlogTags key={this.state.blogPost.postID + '-tags'}
                                                                    postID={this.state.blogPost.postID}
                                                                    blogTags={this.state.blogPost.blogPostTags}/></h4>
-                <br />
+                <br/>
                 <div>{ReactHtmlParser(this.state.blogPost.blogPostHTML)}</div>
             </div>
         );
@@ -62,7 +63,10 @@ class BlogPost extends Component {
         return (
             <div>
                 <MenuNavbar/>
-                {!this.state.loading ? this.renderBlogPost() : <Spinner/>}
+                {
+                    !this.state.loading ? this.renderBlogPost() : <Spinner/>
+                }
+                <Footer/>
             </div>
         );
     }

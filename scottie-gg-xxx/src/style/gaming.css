@@ -1,13 +1,21 @@
-.code-intro {
+.gaming-intro {
     padding-top: 17%;
     padding-bottom: 17%;
     display: table;
     width: 100%;
     height: inherit;
     color: #fff;
-    background: #000 url(../assets/graphics/interview.png) no-repeat scroll bottom center;
+    background: #000 url(../assets/graphics/kinbw.png) no-repeat scroll bottom center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.online {
+    color: #f4bf42;
+}
+
+.offline {
+    color: #bf3200;
 }
