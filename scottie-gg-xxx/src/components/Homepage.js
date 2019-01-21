@@ -10,7 +10,7 @@ class Homepage extends Component {
 
     render() {
         return (
-            <div className="one-hundred-percent-height intro">
+            <div className="one-hundred-percent-height homepage-intro">
                 <MenuNavbar/>
                 <div className="page-center">
                     <img src={sLogo} alt="logo"/>

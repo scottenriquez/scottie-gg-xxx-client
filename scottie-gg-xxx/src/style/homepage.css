@@ -1,11 +1,11 @@
-.intro {
+.homepage-intro {
     display: table;
     width: 100%;
     height: inherit;
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: #000 url(../assets/graphics/code.png) no-repeat scroll bottom center;
+    background: #000 url(../assets/graphics/tokyo.png) no-repeat scroll bottom center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

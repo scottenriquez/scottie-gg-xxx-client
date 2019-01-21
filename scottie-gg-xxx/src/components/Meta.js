@@ -9,7 +9,7 @@ class Meta extends Component {
 
     render() {
         return (
-            <div className="one-hundred-percent-height intro">
+            <div className="one-hundred-percent-height meta-intro">
                 <MenuNavbar/>
                 <div className="page-center">
                     <p>
