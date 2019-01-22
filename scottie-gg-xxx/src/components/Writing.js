@@ -36,6 +36,7 @@ class Writing extends Component {
         this.state.blogPosts.forEach((blogPost) => {
             blogPreviewsJSX.push(<BlogPreview key={blogPost.postID} blogPost={blogPost}/>);
         });
+        blogPreviewsJSX.push(<Footer/>);
         return blogPreviewsJSX;
     };
 
@@ -54,7 +55,6 @@ class Writing extends Component {
                         !this.state.loading ? this.renderBlogPreviews() : <Spinner/>
                     }
                 </div>
-                <Footer/>
             </div>
         );
     }

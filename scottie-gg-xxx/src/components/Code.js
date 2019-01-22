@@ -37,6 +37,7 @@ class Code extends Component {
                 reposJSX.push(<Repo key={repo.id} repo={repo}/>);
             }
         });
+        reposJSX.push(<Footer/>);
         return reposJSX;
     };
 
@@ -55,7 +56,6 @@ class Code extends Component {
                         !this.state.loading ? this.renderRepos() : <Spinner/>
                     }
                 </div>
-                <Footer/>
             </div>
         );
     }

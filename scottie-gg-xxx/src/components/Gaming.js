@@ -56,6 +56,7 @@ class Gaming extends Component {
                     this.state.gamingStatus.steamActivity.total_count > 0 ?
                         <h4>Last seen playing {this.state.gamingStatus.steamActivity.games[0].name}</h4> : <span></span>
                 }
+                <Footer/>
             </div>
         );
     };
@@ -75,7 +76,6 @@ class Gaming extends Component {
                         !this.state.loading ? this.renderGamingStatus() : <Spinner/>
                     }
                 </div>
-                <Footer/>
             </div>
         );
     }

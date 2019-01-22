@@ -55,6 +55,7 @@ class BlogPost extends Component {
                                                                    blogTags={this.state.blogPost.blogPostTags}/></h4>
                 <br/>
                 <div>{ReactHtmlParser(this.state.blogPost.blogPostHTML)}</div>
+                <Footer/>
             </div>
         );
     }
@@ -66,7 +67,6 @@ class BlogPost extends Component {
                 {
                     !this.state.loading ? this.renderBlogPost() : <Spinner/>
                 }
-                <Footer/>
             </div>
         );
     }
