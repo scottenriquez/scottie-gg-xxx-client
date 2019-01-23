@@ -10,12 +10,14 @@ class Homepage extends Component {
 
     render() {
         return (
-            <div className="one-hundred-percent-height homepage-intro">
+            <div className="one-hundred-percent-height">
                 <MenuNavbar/>
-                <div className="page-center">
-                    <img src={sLogo} alt="logo"/>
-                    <br /><br />
-                    <h4 className="to-uppercase ahamono">Developer | Leader | Teacher</h4>
+                <div className="homepage-intro">
+                    <div className="page-center container">
+                        <img src={sLogo} alt="logo"/>
+                        <br /><br />
+                        <h4 className="to-uppercase ahamono">Developer | Leader | Teacher</h4>
+                    </div>
                 </div>
             </div>
         );

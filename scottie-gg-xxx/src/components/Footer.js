@@ -7,7 +7,7 @@ class Footer extends Component {
     render() {
         return (
             <div className="container content-center footer-padding">
-                <p><FontAwesomeIcon icon={faCode}/><a className="ahamono" href="/"> {window.location.hostname.replace('www.','')}</a></p>
+                <p><FontAwesomeIcon icon={faCode}/> <a className="ahamono" href="/">{window.location.hostname.replace('www.','')}</a></p>
             </div>
         );
     }
