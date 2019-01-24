@@ -7,6 +7,12 @@ import BlogPost from './components/BlogPost';
 import Gaming from './components/Gaming';
 import Meta from './components/Meta';
 
+//polyfill for Fetch API for legacy browsers
+//eslint-disable-next-line
+import isomorphic_fetch from 'isomorphic-fetch';
+import {polyfill} from 'es6-promise';
+polyfill();
+
 const App = () => (
     <Router>
         <div className="one-hundred-percent-height">
