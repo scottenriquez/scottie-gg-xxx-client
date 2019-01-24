@@ -7,6 +7,8 @@ import Java from 'prismjs/components/prism-java.min';
 import CSharp from 'prismjs/components/prism-csharp.min';
 //eslint-disable-next-line
 import Python from 'prismjs/components/prism-python.min';
+//eslint-disable-next-line
+import YAML from 'prismjs/components/prism-yaml.min';
 import MenuNavbar from './MenuNavbar';
 import Footer from './Footer';
 import Spinner from './Spinner';
