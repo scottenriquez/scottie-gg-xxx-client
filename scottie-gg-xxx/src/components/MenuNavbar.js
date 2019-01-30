@@ -7,6 +7,7 @@ import {faKeyboard} from '@fortawesome/free-solid-svg-icons';
 import {faGamepad} from '@fortawesome/free-solid-svg-icons';
 import {faBook} from '@fortawesome/free-solid-svg-icons';
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import {faLock} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 class MenuNavbar extends Component {
@@ -39,6 +40,9 @@ class MenuNavbar extends Component {
                         </NavItem>
                         <NavItem className="ahamono to-uppercase" href="mailto:scottie@enriquez.io">
                             <FontAwesomeIcon icon={faEnvelope}/> Contact
+                        </NavItem>
+                        <NavItem className="ahamono to-uppercase" href="/documents/pgp.txt">
+                            <FontAwesomeIcon icon={faLock}/> PGP
                         </NavItem>
                     </Nav>
                 </Navbar.Collapse>
