@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import MenuNavbar from './MenuNavbar';
 import Footer from './Footer';
 import Spinner from './Spinner';
+import XboxErrorBoundary from './XboxErrorBoundary';
+import SteamErrorBoundary from './SteamErrorBoundary';
+import XboxStatus from './XboxStatus';
+import SteamStatus from './SteamStatus';
 import {faXbox} from '@fortawesome/free-brands-svg-icons';
 import {faSteam} from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
@@ -35,27 +39,13 @@ class Gaming extends Component {
     renderGamingStatus = () => {
         return (
             <div>
-                <h3>
-                    <a href="https://live.xbox.com/en-US/Profile?gamertag=exoentropy">
-                        <FontAwesomeIcon icon={faXbox}/></a> Xbox | <span
-                    className={this.state.gamingStatus.xboxStatus.state.toLowerCase()}>
-                    {this.state.gamingStatus.xboxStatus.state}</span>
-                </h3>
-                <h4>{this.state.gamingStatus.xboxGamercard.gamerscore} Gamerscore</h4>
-                {
-                    this.state.gamingStatus.xboxStatus.state === 'Offline' ? <h4>Last seen
-                            playing {this.state.gamingStatus.xboxStatus.lastSeen.titleName} on {this.state.gamingStatus.xboxStatus.lastSeen.deviceType}</h4> :
-                        <span></span>
-                }
+                <SteamErrorBoundary>
+                    <SteamStatus steamStatus={this.state.gamingStatus.steamStatus} steamActivity={this.state.gamingStatus.steamActivity}/>
+                </SteamErrorBoundary>
                 <br/>
-                <h3><a href="https://steamcommunity.com/id/exoentropy"><FontAwesomeIcon icon={faSteam}/></a> Steam
-                    | <span
-                        className={this.state.gamingStatus.steamStatus.state}>{this.state.gamingStatus.steamStatus.state}</span>
-                </h3>
-                {
-                    this.state.gamingStatus.steamActivity.total_count > 0 ?
-                        <h4>Last seen playing {this.state.gamingStatus.steamActivity.games[0].name}</h4> : <span></span>
-                }
+                <XboxErrorBoundary>
+                    <XboxStatus xboxStatus={this.state.gamingStatus.xboxStatus} xboxGamercard={this.state.gamingStatus.xboxGamercard} xboxActivity={this.state.gamingStatus.xboxActivity}/>
+                </XboxErrorBoundary>
                 <Footer/>
             </div>
         );
