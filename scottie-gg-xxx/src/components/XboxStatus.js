@@ -13,11 +13,6 @@ class XboxStatus extends Component {
                     {this.props.xboxStatus.state}</span>
                 </h3>
                 <h4>{this.props.xboxGamercard.gamerscore} Gamerscore</h4>
-                {
-                    this.props.xboxStatus.state === 'Offline' ? <h4>Last seen
-                            playing {this.props.xboxStatus.lastSeen.titleName} on {this.props.xboxStatus.lastSeen.deviceType}</h4> :
-                        <span></span>
-                }
             </div>
         );
     }

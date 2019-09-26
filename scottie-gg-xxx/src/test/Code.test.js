@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Code from '../components/Code';
+import Coding from '../components/Code';
 
 it('renders Code without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<Code />, div);
+    ReactDOM.render(<Coding />, div);
     ReactDOM.unmountComponentAtNode(div);
 });

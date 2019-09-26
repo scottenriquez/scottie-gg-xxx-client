@@ -6,7 +6,7 @@ import Spinner from './Spinner';
 import cLogo from '../assets/graphics/code-c.svg';
 import '../style/code.css';
 
-class Code extends Component {
+class Coding extends Component {
     state = {
         loading: true
     };
@@ -61,4 +61,4 @@ class Code extends Component {
     }
 }
 
-export default Code;
+export default Coding;
