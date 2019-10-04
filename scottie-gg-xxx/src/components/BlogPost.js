@@ -9,6 +9,8 @@ import CSharp from 'prismjs/components/prism-csharp.min';
 import Python from 'prismjs/components/prism-python.min';
 //eslint-disable-next-line
 import YAML from 'prismjs/components/prism-yaml.min';
+//eslint-disable-next-line
+import Bash from 'prismjs/components/prism-bash.min';
 import MenuNavbar from './MenuNavbar';
 import Footer from './Footer';
 import Spinner from './Spinner';
