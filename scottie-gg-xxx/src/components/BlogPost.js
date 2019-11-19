@@ -11,6 +11,14 @@ import Python from 'prismjs/components/prism-python.min';
 import YAML from 'prismjs/components/prism-yaml.min';
 //eslint-disable-next-line
 import Bash from 'prismjs/components/prism-bash.min';
+//eslint-disable-next-line
+import JavaScript from 'prismjs/components/prism-javascript.min';
+//eslint-disable-next-line
+import JSX from 'prismjs/components/prism-jsx.min';
+//eslint-disable-next-line
+import TypeScript from 'prismjs/components/prism-typescript.min';
+//eslint-disable-next-line
+import TSX from 'prismjs/components/prism-tsx.min';
 import MenuNavbar from './MenuNavbar';
 import Footer from './Footer';
 import Spinner from './Spinner';
